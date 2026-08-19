@@ -1,0 +1,142 @@
+/* ==========================================
+   Train Results Page
+   ========================================== */
+
+.results-page {
+  background: var(--color-bg);
+  min-height: 100svh;
+}
+
+/* Layout */
+.results-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding-top: 28px;
+  padding-bottom: 56px;
+}
+
+/* ---- Header Row ---- */
+.results-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.results-count-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.results-heading {
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  font-weight: var(--font-bold);
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.results-count {
+  font-size: var(--text-sm);
+  color: var(--color-text-tertiary);
+  font-weight: var(--font-medium);
+}
+
+/* ---- Sort tabs ---- */
+.sort-tabs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.sort-label {
+  font-size: var(--text-sm);
+  color: var(--color-text-tertiary);
+  font-weight: var(--font-medium);
+  margin-right: 2px;
+}
+
+.sort-tab {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 14px;
+  border-radius: 99px;
+  border: 1.5px solid var(--color-border);
+  background: #fff;
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  font-family: var(--font-family);
+  transition: border-color 120ms ease, color 120ms ease, background 120ms ease;
+  white-space: nowrap;
+}
+
+.sort-tab:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.sort-tab--active {
+  background: var(--color-primary-light) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-primary) !important;
+  font-weight: var(--font-semibold) !important;
+}
+
+.sort-tab:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* ---- Notice ---- */
+.results-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #FEF3C7;
+  border: 1px solid #F59E0B;
+  border-radius: 10px;
+  font-size: var(--text-sm);
+  color: #92400E;
+  margin-bottom: 20px;
+}
+
+/* ---- Empty ---- */
+.results-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 72px 24px;
+  color: var(--color-text-tertiary);
+  text-align: center;
+}
+
+/* ---- Train List ---- */
+.train-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ---- Priorities Trigger Tab ---- */
+.hmc-trigger-tab {
+  border-color: var(--color-primary-light) !important;
+  background: var(--color-surface-warm) !important;
+  color: var(--color-text-primary) !important;
+  font-weight: var(--font-semibold) !important;
+}
+
+.hmc-trigger-tab:hover {
+  border-color: var(--color-primary) !important;
+  background: var(--color-primary-light) !important;
+}
